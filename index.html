@@ -22,7 +22,62 @@
 
     <!-- MAIN -->
     <main>
+        <section class="search">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre de ville ou en pleine nature</p>
+            <form class="searchForm" action="#">
+                <span class="searchIcon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <input class="searchInput" type="search" placeholder="Marseille,France">
+                <button class="searchButton">
+                    <span>Rechercher</span>
+                </button>
+            </form>
 
+            <div class="filterContainer">
+                <h4>Filtres</h2>
+                
+                <!-- FILTRE -->
+                <div class="filterButton">
+                    <div class="filterWrapIcon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <span class="filterTitle">Économique</span>
+                </div>
+
+                <!-- FILTRE -->
+                <div class="filterButton">
+                    <div class="filterWrapIcon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <span class="filterTitle">Familial</span>
+                </div>
+
+                <!-- FILTRE -->
+                <div class="filterButton">
+                    <div class="filterWrapIcon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <span class="filterTitle">Romantique</span>
+                </div>
+
+                <!-- FILTRE -->
+                <div class="filterButton">
+                    <div class="filterWrapIcon">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                    <span class="filterTitle">Animaux autorisés</span>
+                </div>
+            </div>
+            
+            <div class="filterResult">
+                <div class="resultIcon">
+                    <i class="fas fa-info"></i>
+                </div>
+                <p>Plus de 500 logements sont disponible dans cette ville</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
