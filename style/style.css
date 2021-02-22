@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
 
-root{
+:root{
     --blue:#0065FC;
     --light-blue:#DEEBFF;
     --gray:#F2F2F2;
@@ -9,9 +9,49 @@ root{
 *{
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
 body{
     font-family: 'Raleway', sans-serif,Arial;
 }
 
+main{
+    width:1440px;
+    padding:2rem;
+    margin:auto;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:auto;
+    max-width:1440px;
+    padding:1rem;
+}
+
+nav{
+    margin-top:12.5px;
+}
+
+.navLink,.signUp{
+    text-decoration:none;
+    padding:2rem;
+    color:black;
+}
+
+.navLink:hover{
+    color:var(--blue);
+    border-top:3px solid var(--blue);
+}
+
+.navLink[data-active=true]{
+    color:var(--blue);
+    border-top:3px solid var(--blue);
+}
+
+.signUp{
+    font-weight:700;
+    color:var(--blue);
+}
