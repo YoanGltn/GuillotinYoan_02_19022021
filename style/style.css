@@ -58,6 +58,10 @@ nav{
 
 /* SEARCH */
 
+.search{
+    margin-bottom:3rem;
+}
+
 .searchIcon,.searchInput,.searchButton{
     padding:1rem 1.25rem;
 }
@@ -148,3 +152,67 @@ nav{
     color:var(--blue);
     margin-right:10px;
 }
+
+/* HOSTING */
+
+#hosting{
+    padding:2rem;
+    background-color:var(--gray);
+    border-radius:20px;
+    display:flex;
+}
+
+.hostingMainSection{
+    display:flex;
+    flex-direction:row;
+}
+
+h4{
+    margin-bottom:1rem;
+    font-size:20px;
+}
+
+.hostingItem{
+    width:100%;
+    background-color:white;
+    padding:0.3rem;
+    border-radius:20px;
+}
+
+.hostingItem img{
+    width:100%;
+    height:100%;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    object-fit: cover;
+}
+
+.hostingContent{
+    padding-left:10px;
+}
+
+.hostingContent p{
+    font-size:12px;
+}
+
+.hostingContent h5{
+    font-size:15px;
+    margin-top:10px;
+}
+.hostingItem li{
+    list-style:none;
+    display:inline-block;
+}
+
+.hostingContent h5,p,.hostingstar{
+    margin-bottom:5px;
+}
+
+.hostingStar{
+    color:var(--blue);
+}
+
+.hostingStar[data-active=false]{
+    color:var(--gray);
+}
+
