@@ -14,13 +14,17 @@
 
 body {
   font-family: "Raleway", sans-serif, Arial;
-  max-width: 1440px;
   margin:auto;
 }
 
 main {
   padding: 1rem;
+  max-width: 1440px;
+  margin:auto;
+}
 
+a{
+    text-decoration:none;
 }
 
 header {
@@ -28,6 +32,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  max-width: 1440px;
+  margin:auto;
 }
 
 nav {
@@ -160,6 +166,7 @@ nav {
     display: grid;
     column-gap: 2rem;
     grid-template-columns: 6fr 3fr;
+    margin-bottom:3rem;
 }
 
 .hostingMainSection{
@@ -257,5 +264,98 @@ nav {
 
 /* ACTIVITY */
 
+#activity{
+    display:grid;
+    column-gap:2rem;
+    margin:4rem 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+}
 
+.hostingHeader{
+    grid-column: 1/-1;
+}
 
+.activityHeader{
+    margin-bottom:3rem;
+}
+
+.activityItem{
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.1s;
+}
+
+.activityImg{
+    position: relative;
+    flex: 1;
+}
+
+.activityImg img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activityTitle{
+    margin: 1.2rem 1.5rem;
+    text-align:center;
+    color:black;
+}
+
+.activityItem1{
+    grid-row: 2/7;
+    grid-column: 1/2;
+}
+
+.activityItem2{
+    grid-column: 2/3;
+    grid-row: 2/5;
+}
+
+.activityItem3{
+    grid-column: 3/4;
+    grid-row: 2/7;
+}
+
+.activityItem4{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.activityItem5{
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.activityItem6{
+    grid-column: 4/5;
+    grid-row: 4/7;
+}
+
+/* FOOTER */
+
+footer{
+    display:flex;
+    background-color:var(--gray);
+}
+
+.footerAbout,.footerHosting,.footerSupport{
+    width:30%;
+    padding:2rem 2rem;
+}
+
+footer h5{
+    margin-bottom:1rem;
+    font-size:18px;
+}
+
+.footerLink{
+    display:block;
+    color:black;
+    margin-bottom:1rem;
+}
