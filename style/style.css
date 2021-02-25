@@ -340,8 +340,15 @@ nav {
 /* FOOTER */
 
 footer{
-    display:flex;
+  
     background-color:var(--gray);
+}
+
+.footerContainer{
+  margin:auto;
+  display:flex;
+  width:80%;
+  padding-left:1rem;
 }
 
 .footerAbout,.footerHosting,.footerSupport{
