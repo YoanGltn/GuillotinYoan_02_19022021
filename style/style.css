@@ -219,6 +219,9 @@ nav {
     color:var(--gray);
 }
 
+.showMore{
+  font-weight:700;
+}
 /* HOSTING ASIDE */
 #hostingAside{
     background-color:var(--gray);
