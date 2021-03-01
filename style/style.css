@@ -348,7 +348,7 @@ footer a:last-of-type{
   justify-content:space-around;
 }
 
-@media (min-width:678px) and (max-width:1024px){
+@media (min-width:678px) and (max-width:1200px){
   .filterSearchBar{
     text-align:left;
   }
@@ -383,6 +383,7 @@ footer a:last-of-type{
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-between;
+    row-gap:1rem;
   }
 
   .hostingTitle{
@@ -402,6 +403,7 @@ footer a:last-of-type{
     flex-wrap:wrap;
     flex-direction:row;
     justify-content:space-between;
+    row-gap:2rem;
   }
 
   .activityTitle{
