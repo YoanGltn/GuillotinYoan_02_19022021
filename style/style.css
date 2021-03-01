@@ -17,7 +17,7 @@ body {
   margin:auto;
 }
 
-main {
+header,main {
   padding: 1rem;
   max-width: 1440px;
   margin:auto;
@@ -31,9 +31,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  max-width: 1440px;
-  margin:auto;
 }
 
 nav {
@@ -129,6 +126,10 @@ nav {
   text-align: center;
 }
 
+.filterButton:hover{
+  background-color:var(--light-blue);
+  cursor: pointer;
+}
 .filterWrapIcon i {
   color: var(--blue);
   background-color: var(--light-blue);
@@ -193,6 +194,13 @@ nav {
     max-height:212px;
 }
 
+.hostingItem:hover{
+  background-color:var(--light-blue);
+}
+.hostingItem a{
+  color:black;
+}
+
 .hostingItem img{
     border-radius:20px 20px 0 0;
     width:100%;
@@ -221,6 +229,7 @@ nav {
 
 .showMore{
   font-weight:700;
+  padding-top:1rem;
 }
 /* HOSTING ASIDE */
 #hostingAside{
@@ -239,13 +248,18 @@ nav {
     margin:0;
 }
 
+.hostingAsideHeaderLink{
+  display:flex;
+  margin:0;
+}
+
 .hostingAsideItem{
     display:flex;
     height:10rem;
 }
 
 .hostingAsideImg{
-    width:33%;
+    width:35%;
     max-width:50%;
 }
 
@@ -259,6 +273,11 @@ nav {
 .hostingAsideContent{
     display:flex;
     flex-direction:column;
+    width:50%;
+}
+
+.hostingStarAside{
+  padding:8px;
 }
 
 .whiteSpace{
@@ -343,20 +362,18 @@ nav {
 /* FOOTER */
 
 footer{
-  
     background-color:var(--gray);
 }
 
 .footerContainer{
   margin:auto;
   display:flex;
-  width:80%;
-  padding-left:1rem;
+  width:1440px;
 }
 
 .footerAbout,.footerHosting,.footerSupport{
     width:30%;
-    padding:2rem 2rem;
+    padding:1rem;
 }
 
 footer h5{
