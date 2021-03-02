@@ -15,10 +15,18 @@
     <header>
       <div class="header">
         <img src="img/Reservia.svg" alt="Logo du site Reservia" />
-        <a href="#">S'inscrire</a>
+
+        <!-- NAV DESKTOP -->
+        <nav class="hideOnMobile">
+          <a href="#hosting" data-active="true">Hébergements</a>
+          <a href="#activity">Activités</a>
+          <a href="#">S'inscrire</a>
+        </nav>
+        <a class="hideOnDesktop" href="#">S'inscrire</a>
       </div>
 
-      <nav>
+      <!-- NAV MOBILE -->
+      <nav class="hideOnDesktop">
         <a href="#hosting" data-active="true">Hébergements</a>
         <a href="#activity">Activités</a>
       </nav>
@@ -39,9 +47,15 @@
             placeholder="Marseille, France"
             size="1"
           />
-          <a href="#">
+          <!-- Search icon hide desktop -->
+          <a class="hideOnDesktop" href="#">
             <i class="fas fa-search" aria-hidden="true"></i>
           </a>
+
+          <a class="searchBarButton hideOnMobile" href="#">
+            Rechercher
+          </a>
+
         </div>
 
         <div class="filterResult">
@@ -86,7 +100,9 @@
       </section>
 
       <section id="hosting">
-        <div class="hostingAside">
+
+        <!-- HOSTING ASIDE -->
+        <aside class="hostingAside">
           <div class="hostingTitle">
             <h4>Les plus populaires</h4>
             <i class="fas fa-chart-line"></i>
@@ -165,10 +181,11 @@
               </div>
             </div>
           </a>
-        </div>
+        </aside>
 
+        <!-- HOSTING MAIN SECTION TITLE -->
         <div class="hostingMainSection">
-          <!-- HOSTING MAIN SECTION TITLE -->
+          
           <div class="hostingTitle">
             <h4>Hébergements à Marseille</h4>
           </div>
