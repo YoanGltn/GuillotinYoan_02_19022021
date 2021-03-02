@@ -532,4 +532,21 @@ footer a:last-of-type{
   .showMore{
     flex-basis:100%;
   }
+
+  .hostingAsideItem{
+    width:80%;
+    margin:1rem auto;
+  }
+
+  .footerContainer{
+    display:flex;
+    max-width:1440px;
+    width:100%;
+    margin:auto;
+  }
+
+  .footerContainer div{
+    width:33.3%;
+    
+  }
 }
