@@ -359,7 +359,23 @@ footer a:last-of-type{
   justify-content:space-around;
 }
 
-@media (min-width:678px) and (max-width:1200px){
+@media (min-width:668px) and (max-width:1180px){
+  .header{
+    padding:0;
+  }
+  
+  .header > nav a {
+    border-bottom: none;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+nav a[data-active="true"] {
+  border-bottom: none;
+  border-top: 3px solid var(--blue);
+}
+  
+  
   .filterSearchBar{
     text-align:left;
   }
@@ -440,6 +456,29 @@ footer a:last-of-type{
 
   .activityItemContainer{
     flex-basis:calc(95% / 2);
+  }
+
+  .hideOnDesktop{
+    display:none;
+  }
+
+  .hideOnMobile{
+    display:inline-flex;
+  }
+
+  
+  .searchBarButton {
+    background-color: var(--blue);
+    color: white;
+    padding: 13px;
+    border-radius: 0 15px 15px 0;
+}
+  .showTablet{
+    display:inline-flex;
+  }
+
+  .showOnTablet{
+    display:flex;
   }
 }
 
