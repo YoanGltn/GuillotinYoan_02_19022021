@@ -401,8 +401,20 @@ footer a:last-of-type{
     flex-basis:calc(100%);
   }
 
+  .hostingTitle h4{
+    margin-right:12rem;
+  }
   .hostingMainItem{
-    flex-basis:calc(60% / 2);
+    flex-basis:calc(95% / 2);
+  }
+
+  .hostingAside{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .hostingAsideItem{
+    width:60%;
   }
 
   .showMore{
@@ -422,7 +434,7 @@ footer a:last-of-type{
   }
 
   .activityItemContainer{
-    flex-basis:calc(60% / 2);
+    flex-basis:calc(95% / 2);
   }
 }
 
