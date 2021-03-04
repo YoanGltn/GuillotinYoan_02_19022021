@@ -108,6 +108,7 @@ nav a[data-active="true"] {
 
 .filterTitle {
   margin: 0 0 1rem 0;
+  flex-basis:calc(100%/1);;
 }
 
 .filterResult {
@@ -115,10 +116,15 @@ nav a[data-active="true"] {
   flex-wrap:wrap;
 }
 
+.filterButtonContainer{
+  display:flex;
+  flex-wrap:wrap;
+}
+
 .filterButton {
   display: flex;
   align-items: center;
-  flex-basis: calc(50% /2);
+  flex-basis: calc(80% /2);
   border-radius: 50px;
   border: 3px solid var(--gray);
   border-left-style: none;
@@ -146,7 +152,6 @@ nav a[data-active="true"] {
 
 .filterButton p {
   padding: 0 0 0 10px;
-  width: 80%;
 }
 
 .filterButton:last-of-type {
