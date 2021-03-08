@@ -335,6 +335,7 @@ nav a[data-active="true"] {
 
 .activityBigItem{
   display:flex;
+  flex-direction:column;
 }
 
 .activityTwoItem{
