@@ -124,7 +124,7 @@ nav a[data-active="true"] {
   align-items: center;
   display: flex;
   background-color: white;
-  margin: 5px 5px 5px 15px;
+  margin: 5px 5px 5px 14px;
 }
 
 .filterButtonContainer {
@@ -134,8 +134,8 @@ nav a[data-active="true"] {
 }
 
 .filterButtonIcon {
-  width: 15px;
-  margin: 0 2rem 0 -1px;
+  width:2px;
+  margin: 0 2.5rem 0 -1px;
 }
 
 .filterButtonIcon i {
