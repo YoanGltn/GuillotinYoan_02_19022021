@@ -113,14 +113,40 @@ nav a[data-active="true"] {
 
 .filterResult {
   padding-left: 10px;
-  flex-wrap:wrap;
 }
 
 .filterButton{
-  border:2px solid var(--gray);
-  border-radius:20px;
   display:flex;
- 
+  border-radius:20px;
+  border:3px solid var(--gray);
+  color:black;
+  font-weight:700;
+  align-items:center;
+  display:flex;
+  background-color:white;
+  margin:5px 5px 5px 15px;
+}
+
+.filterButtonContainer{
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+}
+
+.filterButtonIcon{
+  width:15px;
+  margin:0 2rem 0 -10px;
+}
+
+.filterButtonIcon i{
+  color:var(--blue);
+  background-color:var(--light-blue);
+  border-radius:100px;
+  padding:15px;
+}
+
+.filterButton p{
+  padding:0 10px 0 10px;
 }
 
 .filterButton:hover {
@@ -365,11 +391,16 @@ nav a[data-active="true"] {
   }
 
   .filterTitle{
-    flex-basis: calc(100%);
+    flex-basis:0;
+  }
+
+  .filterButtonTitle{
+    margin-right:5px;
   }
 
   .filterButtonContainer {
     flex-wrap: nowrap;
+    align-items:center;
   }
 
   .filterButton{
@@ -531,6 +562,7 @@ nav a[data-active="true"] {
 
   .filterTitle{
     margin-right:1rem;
+    flex-basis:0;
   }
 
   .filterButton i{
