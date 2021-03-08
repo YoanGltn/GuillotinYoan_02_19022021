@@ -116,46 +116,15 @@ nav a[data-active="true"] {
   flex-wrap:wrap;
 }
 
-.filterButtonContainer{
+.filterButton{
+  border:2px solid var(--gray);
+  border-radius:20px;
   display:flex;
-  flex-wrap:wrap;
-}
-
-.filterButton {
-  display: flex;
-  align-items: center;
-  flex-basis: calc(80% /2);
-  border-radius: 50px;
-  border: 3px solid var(--gray);
-  border-left-style: none;
-  font-weight: 700;
-  margin-bottom: 10px;
-  width: 180px;
-  color: black;
-  transition: 0.1s;
+ 
 }
 
 .filterButton:hover {
   background-color: var(--light-blue);
-}
-
-.filterButton i {
-  background-color: var(--light-blue);
-  padding: 15px;
-  border-radius: 100%;
-  color: var(--blue);
-  font-size: 15px;
-  width: 30%;
-  text-align: center;
-  font-weight:700;
-}
-
-.filterButton p {
-  padding: 0 0 0 10px;
-}
-
-.filterButton:last-of-type {
-  margin-bottom: 2rem;
 }
 
 .filterResultInfo {
@@ -196,7 +165,7 @@ nav a[data-active="true"] {
 .hostingTitle{
   display:flex;
   font-size:20px;
-  padding:2.5em 0 0 0;
+  padding:1.5em 0 0 0;
   margin-bottom:2rem;
   justify-content:space-between;
 }
@@ -364,7 +333,7 @@ footer a:last-of-type{
   justify-content:space-around;
 }
 
-@media (min-width:668px) and (max-width:1180px){
+@media (min-width:668px) and (max-width:1199px){
   .header{
     padding:0;
   }
@@ -392,10 +361,15 @@ nav a[data-active="true"] {
   .filterResult{
     display:flex;
     flex-wrap:wrap;
+    align-items:left;
   }
 
   .filterTitle{
     flex-basis: calc(100%);
+  }
+
+  .filterButtonContainer {
+    flex-wrap: nowrap;
   }
 
   .filterButton{
@@ -420,6 +394,7 @@ nav a[data-active="true"] {
 
   .hostingTitle{
     flex-basis: calc(100%/1);
+    padding:0;
   }
 
   .hostingTitle h4{
@@ -550,6 +525,10 @@ nav a[data-active="true"] {
     flex-wrap:wrap;
   }
 
+  .filterButtonContainer{
+    flex-wrap:nowrap;
+  }
+
   .filterTitle{
     margin-right:1rem;
   }
@@ -583,11 +562,18 @@ nav a[data-active="true"] {
 
   .hostingAside{
     width:50%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
   }
 
   .hostingTitle{
     padding:0.5em 0 0 0.5em;
     flex-basis: calc(100%);
+  }
+
+  .hostingAsideTitle{
+    margin-right:10rem;
   }
 
   .hostingMainItem{
@@ -604,7 +590,7 @@ nav a[data-active="true"] {
 
   .hostingAsideItem{
     width:80%;
-    margin:1rem auto;
+    margin-bottom:2rem;
   }
 
   #activity{
