@@ -525,7 +525,6 @@ footer a:last-of-type {
   }
 
 
-
   nav a[data-active="true"] {
     border-bottom: none;
     border-top: 3px solid var(--blue);
@@ -646,6 +645,9 @@ footer a:last-of-type {
   }
 
   /* ACITIVTY */
+  #activity{
+    margin:3rem 0 3rem 0;
+  }
   .activityContainer {
     display: flex;
     column-gap: 3rem;
