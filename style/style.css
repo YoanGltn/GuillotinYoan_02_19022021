@@ -401,7 +401,6 @@ footer a:last-of-type {
   .filterResult {
     display: flex;
     flex-wrap: wrap;
-    align-items: left;
   }
 
   .filterTitle {
@@ -525,9 +524,7 @@ footer a:last-of-type {
     display: inline-flex;
   }
 
-  nav {
-    flex-direction: flex-start;
-  }
+
 
   nav a[data-active="true"] {
     border-bottom: none;
