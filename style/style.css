@@ -5,12 +5,6 @@ body {
   margin: auto;
 }
 
-:root {
-  --blue: #0065fc;
-  --light-blue: #deebff;
-  --gray: #f2f2f2;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +18,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--blue);
+  color: #0065fc;
 }
 
 
@@ -56,11 +50,11 @@ header{
 }
 
 .navItem2 a:first-of-type{
-  border-bottom:3px solid var(--blue);
+  border-bottom:3px solid #0065fc;
 }
 
 .navItem2 a:last-of-type{
-  border-bottom:3px solid var(--gray);
+  border-bottom:3px solid #f2f2f2;
   color:black;
 }
 
@@ -104,15 +98,15 @@ header{
 
 .filterSearchBar i:first-of-type {
   padding: 16px;
-  background-color: var(--gray);
+  background-color: #f2f2f2;
   border-radius: 10px 0 0 10px;
 }
 
 .filterInput {
   padding: 15px;
   border: none;
-  border-top: 1px solid var(--gray);
-  border-bottom: 1px solid var(--gray);
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
   width: 70%;
 }
 
@@ -123,7 +117,7 @@ header{
 }
 
 .filterSearchBar a > i:last-of-type {
-  background-color: var(--blue);
+  background-color: #0065fc;
   border-radius: 15px;
   color: white;
 }
@@ -140,7 +134,7 @@ header{
 .filterButton {
   display: flex;
   border-radius: 100px;
-  border: 3px solid var(--gray);
+  border: 3px solid #f2f2f2;
   color: black;
   font-weight: 700;
   align-items: center;
@@ -161,8 +155,8 @@ header{
 }
 
 .filterButtonIcon i {
-  color: var(--blue);
-  background-color: var(--light-blue);
+  color: #0065fc;
+  background-color: #deebff;
   border-radius: 100px;
   padding: 15px;
 }
@@ -172,7 +166,7 @@ header{
 }
 
 .filterButton:hover {
-  background-color: var(--light-blue);
+  background-color:#deebff;
 }
 
 .filterResultInfo {
@@ -196,7 +190,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--blue);
+  color: #0065fc;
   font-size: 13px;
   margin-right: 1rem;
 }
@@ -209,7 +203,7 @@ header{
 }
 
 .hostingAside {
-  background-color: var(--gray);
+  background-color: #f2f2f2;
 }
 
 .hostingTitle {
@@ -225,7 +219,7 @@ header{
 }
 
 .hostingItemGeneral:hover {
-  background-color: var(--light-blue);
+  background-color:#deebff;
 }
 
 .hostingItemGeneral {
@@ -273,13 +267,13 @@ header{
   display: flex;
   align-items: flex-end;
   flex-grow: 1;
-  color: var(--blue);
+  color: #0065fc;
   padding-bottom: 1px;
   font-size: 12px;
 }
 
 .hostingStar i[data-active="false"] {
-  color: var(--gray);
+  color: #f2f2f2;
 }
 
 .hostingMainSection {
@@ -330,7 +324,7 @@ header{
 }
 
 .activityItemContainer:hover {
-  background-color: var(--light-blue);
+  background-color:#deebff;
 }
 
 .activityItemContainer {
@@ -370,7 +364,7 @@ header{
 footer {
   display: flex;
   flex-direction: column;
-  background-color: var(--gray);
+  background-color: #f2f2f2;
   padding: 1rem;
 }
 
@@ -424,7 +418,7 @@ footer a:last-of-type {
 
   .navItem2 a:first-of-type{
     border-bottom:none;
-    border-top:2px solid var(--blue);
+    border-top:2px solid #0065fc;
     padding-top:2rem;
   }
 
@@ -542,7 +536,7 @@ footer a:last-of-type {
   }
 
   .searchBarButton {
-    background-color: var(--blue);
+    background-color: #0065fc;
     color: white;
     padding: 13px;
     border-radius: 0 15px 15px 0;
@@ -599,7 +593,7 @@ footer a:last-of-type {
 
   .navItem2 a:first-of-type{
     border-bottom:none;
-    border-top:2px solid var(--blue);
+    border-top:2px solid #0065fc;
     padding-top:2rem;
   }
 
@@ -618,7 +612,7 @@ footer a:last-of-type {
   }
 
   .searchBarButton {
-    background-color: var(--blue);
+    background-color: #0065fc;
     color: white;
     padding: 13px;
     border-radius: 0 15px 15px 0;
@@ -656,7 +650,7 @@ footer a:last-of-type {
   .hostingMainSection,
   .hostingAside {
     border-radius: 20px;
-    background-color: var(--gray);
+    background-color: #f2f2f2;
   }
 
   .hostingMainSection {
@@ -707,10 +701,6 @@ footer a:last-of-type {
   .activityContainer {
     column-gap: 3rem;
     row-gap: 2rem;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
     display: flex;        
   }
 
